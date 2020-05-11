@@ -38,7 +38,8 @@ $(document).ready(function() {
     $("#stop").show();
 
     $('#populationChooser').attr("disabled", true);
-    $('#interactionChooser').attr("disabled", true)
+    $('#interactionChooser').attr("disabled", true);
+    $('#infectedChooser').attr("disabled", true);
     $('#maskChooser').attr("disabled", true);
 
   });
