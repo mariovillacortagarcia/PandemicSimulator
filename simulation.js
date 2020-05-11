@@ -17,7 +17,7 @@ const SANE_MASK_COLOR = "#FFE900";
 const IMMUNE_COLOR = "#828282";
 
 function setup() {
-  var canvas = createCanvas(windowWidth-400, windowHeight);
+  var canvas = createCanvas(windowWidth*0.75, windowHeight);
 
   canvas.parent('simulation');
 }
@@ -45,7 +45,7 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth-400, windowHeight);
+  resizeCanvas(windowWidth*0.75, windowHeight);
 }
 
 function createPeople() {
