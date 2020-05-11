@@ -13,10 +13,13 @@
 </head>
 
 <body>
+  <div class="alert alert-primary text-center h3" role="alert">
+    <b>Pandemic Simulator</b>
+  </div>
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-3 col-xs-12" id="settings">
-        <h1>Parameter settings</h1>
+        <h5><b>Parameter settings</b></h5>
         <form>
           <div class="form-group">
             <label for="populationChooser">Population: <a id="population">0 </a></label>
@@ -44,7 +47,7 @@
           </center>
         </form>
 
-        <ul class="list-group mt-3">
+        <ul class="list-group mt-3 mb-3">
           <li class="list-group-item d-flex justify-content-between align-items-center">
             Infected:
             <span class="badge badge-primary badge-pill" id="infectedStat"></span>
@@ -58,22 +61,29 @@
             <span class="badge badge-primary badge-pill" id="immuneStat"></span>
           </li>
         </ul>
-      </div>
-      <!--<canvas id="chart" width="40" height="40"></canvas>-->
-      <div class="col-sm-9 col-xs-12" id="simulation">
+
+        <span class="badge text-light" style="background-color:#3BB143">Sane</span>
+        <span class="badge " style="background-color:#FFE900">Sane with mask</span>
+        <span class="badge text-light" style="background-color:#E60026">Infected</span>
+        <span class="badge text-light" style="background-color:#EF7F1A">Infected with mask</span>
+        <span class="badge text-light " style="background-color:#828282">Recovered/Immune</span>
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="state.js"></script>
-    <script src="person.js"></script>
-    <script src="simulation.js"></script>
-    <script src="process.js"></script>
+    <!--<canvas id="chart" width="40" height="40"></canvas>-->
+    <div class="col-sm-9 col-xs-12" id="simulation">
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="state.js"></script>
+  <script src="person.js"></script>
+  <script src="simulation.js"></script>
+  <script src="process.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@ const MAX_VEL = 5;
 const INFECTED_COLOR = "#E60026";
 const INFECTED_MASK_COLOR = "#EF7F1A";
 const SANE_COLOR = "#3BB143";
-const SANE_MASK_COLOR = "	#FFE900";
+const SANE_MASK_COLOR = "#FFE900";
 const IMMUNE_COLOR = "#828282";
 
 function setup() {
