@@ -1,6 +1,10 @@
 var people = [];
 var clock = 0;
-var stat = {infected:[], sane:[],immune:[]};
+var stat = {
+  infected: [],
+  sane: [],
+  immune: []
+};
 
 
 const RECOVERY_TIME = 1000;
@@ -13,7 +17,8 @@ const SANE_MASK_COLOR = "	#FFE900";
 const IMMUNE_COLOR = "#828282";
 
 function setup() {
-  var canvas = createCanvas(1000, 600);
+  var canvas = createCanvas(windowWidth-400, windowHeight);
+
   canvas.parent('simulation');
 }
 
@@ -37,6 +42,10 @@ function draw() {
   }
 
 
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth-400, windowHeight);
 }
 
 function createPeople() {
