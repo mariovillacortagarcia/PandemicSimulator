@@ -72,6 +72,7 @@ $(document).ready(function() {
     $('#populationChooser').attr("disabled", false);
     $('#interactionChooser').attr("disabled", false)
     $('#maskChooser').attr("disabled", false);
+    $('#infectedChooser').attr("disabled", false);
 
   });
 });
