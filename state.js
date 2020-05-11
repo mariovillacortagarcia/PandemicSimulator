@@ -11,23 +11,29 @@ var maskRate = 0;
 $(document).ready(function() {
   //Show values
   $('#populationChooser[type=range]').on('input', function() {
-    $("#population").text(document.getElementById("populationChooser").value);
     numPeople = document.getElementById("populationChooser").value;
+    if(numPeople > 350){
+      $("#caution").show();
+    }else{
+      $("#caution").hide();
+    }
+    $("#population").text(numPeople);
+
 
   });
   $('#infectedChooser[type=range]').on('input', function() {
-    $("#infected").text(document.getElementById("infectedChooser").value);
     infectedRate = document.getElementById("infectedChooser").value;
+    $("#infected").text(infectedRate);
     infectedRate /= 100;
   });
   $('#interactionChooser[type=range]').on('input', function() {
-    $("#interaction").text(document.getElementById("interactionChooser").value);
     interactionRate = document.getElementById("interactionChooser").value;
+    $("#interaction").text(interactionRate);
     interactionRate /= 100;
   });
   $('#maskChooser[type=range]').on('input', function() {
-    $("#mask").text(document.getElementById("maskChooser").value);
     maskRate = document.getElementById("maskChooser").value;
+    $("#mask").text(maskRate);
     maskRate /= 100;
   });
   //State switch
